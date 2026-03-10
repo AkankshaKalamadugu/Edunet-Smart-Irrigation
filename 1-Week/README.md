@@ -1,94 +1,125 @@
-Project Structure
-📦 Smart Irrigation System
+# 🌱 Smart Irrigation System
+
+A **Machine Learning based Smart Irrigation System** that predicts optimal irrigation requirements using environmental and soil parameters.
+The project uses a **multi-output regression model** to estimate irrigation needs based on temperature, humidity, soil moisture, rainfall, and pH levels.
+
+---
+
+# 📦 Project Structure
+
+```
+Smart-Irrigation-System
 │
-├── Smart_Irrigation_updated.ipynb     # Jupyter Notebook for data preprocessing, model training, and evaluation
-├── irrigation_machine.csv             # Dataset containing soil and weather parameters
-├── min_max_scaler.joblib              # Saved Min-Max Scaler for consistent feature scaling
-├── multi_output_irrigation_model.joblib  # Trained Multi-Output Regression Model
-└── README.md                          # Project documentation
+├── Smart_Irrigation_updated.ipynb
+├── irrigation_machine.csv
+├── min_max_scaler.joblib
+├── multi_output_irrigation_model.joblib
+└── README.md
+```
 
+**Files Description**
 
-📌 Features
-📊 Data preprocessing and feature scaling using MinMaxScaler
+* **Smart_Irrigation_updated.ipynb** – Jupyter Notebook for data preprocessing, model training, and evaluation
+* **irrigation_machine.csv** – Dataset containing soil and weather parameters
+* **min_max_scaler.joblib** – Saved Min-Max Scaler for feature scaling
+* **multi_output_irrigation_model.joblib** – Trained Multi-Output Regression Model
+* **README.md** – Project documentation
 
-🔢 Multi-output regression model for predicting multiple irrigation parameters
+---
 
-📁 Clean and structured dataset with soil and climate factors
+# 📌 Features
 
-💾 Model and scaler serialization using joblib
+* Data preprocessing and feature scaling using **MinMaxScaler**
+* Multi-output regression model for predicting irrigation parameters
+* Structured dataset with soil and climate factors
+* Model serialization using **joblib**
+* Model evaluation using standard regression metrics
 
-📈 Evaluation metrics to assess model accuracy
+---
 
+# 🧠 Machine Learning Techniques Used
 
+**Min-Max Scaling**
+Normalizes input features to improve model performance.
 
-🧠 Machine Learning Techniques Used
-MinMax Scaling: For normalizing input features.
+**Multi-Output Regression**
+Predicts multiple irrigation-related outputs simultaneously.
 
-Multi-Output Regression: To predict multiple irrigation-related outputs simultaneously.
+**Model Serialization**
+Uses `joblib` to save and load trained models and scalers.
 
-Model Serialization: Using joblib to save and load the model and scaler.
+---
 
+# 📂 Dataset Description
 
-📂 Dataset Description (irrigation_machine.csv)
-The dataset includes:
+The dataset (`irrigation_machine.csv`) includes the following features:
 
-Feature	Description
-Temperature	Ambient temperature in Celsius
-Humidity	Relative humidity in percentage
-Moisture Level	Soil moisture content
-pH	pH level of the soil
-Rainfall	Rainfall in mm
-Output Variables	Optimal irrigation quantities/needs
+| Feature        | Description              |
+| -------------- | ------------------------ |
+| Temperature    | Ambient temperature (°C) |
+| Humidity       | Relative humidity (%)    |
+| Moisture Level | Soil moisture content    |
+| pH             | Soil pH level            |
+| Rainfall       | Rainfall (mm)            |
 
+**Output Variable**
 
+* Optimal irrigation quantity required for crops.
 
-🚀 How to Run
-Clone the repository
+---
 
-bash
-Copy
-Edit
+# 🚀 How to Run the Project
+
+### 1️⃣ Clone the repository
+
+```
 git clone https://github.com/your-username/smart-irrigation-system.git
 cd smart-irrigation-system
-Install dependencies
+```
 
-bash
-Copy
-Edit
+### 2️⃣ Install dependencies
+
+```
 pip install pandas numpy scikit-learn joblib matplotlib
-Run the Jupyter Notebook
-Open Smart_Irrigation_updated.ipynb using Jupyter Notebook or JupyterLab.
+```
 
-Test the model
-Load the saved model and scaler:
+### 3️⃣ Run the Jupyter Notebook
 
-python
-Copy
-Edit
-from joblib import load
-model = load('multi_output_irrigation_model.joblib')
-scaler = load('min_max_scaler.joblib')
-📊 Model Evaluation
-The notebook includes model evaluation using metrics such as:
+Open the notebook:
 
-Mean Absolute Error (MAE)
+```
+Smart_Irrigation_updated.ipynb
+```
 
-Mean Squared Error (MSE)
+using **Jupyter Notebook** or **JupyterLab**.
 
-R² Score
+---
 
-These metrics help understand how well the model is performing in predicting irrigation needs.
+# 📊 Model Evaluation
 
-💡 Future Improvements
-Integrate with IoT sensors for real-time data
+The model performance is evaluated using:
 
-Deploy as a web or mobile application
+* **Mean Absolute Error (MAE)**
+* **Mean Squared Error (MSE)**
+* **R² Score**
 
-Add support for multiple crop types and regions
+These metrics help measure the accuracy of irrigation predictions.
 
+---
 
-🙋‍♀️ Author
-Kalamadugu Akanksha
-B.Tech - Artificial Intelligence & Machine Learning
+# 💡 Future Improvements
+
+* Integration with **IoT sensors** for real-time data collection
+* Deployment as a **web or mobile application**
+* Support for **multiple crop types and regions**
+* Real-time irrigation recommendations
+
+---
+
+# 👩‍💻 Author
+
+**Akanksha Kalamadugu**
+B.Tech – Artificial Intelligence & Machine Learning
 Malla Reddy Engineering College for Women
+
 
