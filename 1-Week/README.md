@@ -9,12 +9,12 @@ The project uses a **multi-output regression model** to estimate irrigation need
 
 ```
 Smart-Irrigation-System
-│
-├── Smart_Irrigation_updated.ipynb
+|──README.md
+├──Smart_Irrigation_updated.ipynb
 ├── irrigation_machine.csv
 ├── min_max_scaler.joblib
 ├── multi_output_irrigation_model.joblib
-└── README.md
+
 ```
 
 **Files Description**
