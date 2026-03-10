@@ -1,11 +1,11 @@
-# 🌱 Smart Irrigation System
+# Smart Irrigation System
 
 A **Machine Learning based Smart Irrigation System** that predicts optimal irrigation requirements using environmental and soil parameters.
 The project uses a **multi-output regression model** to estimate irrigation needs based on temperature, humidity, soil moisture, rainfall, and pH levels.
 
 ---
 
-# 📦 Project Structure
+# Project Structure
 
 ```
 Smart-Irrigation-System
@@ -27,7 +27,7 @@ Smart-Irrigation-System
 
 ---
 
-# 📌 Features
+# Features
 
 * Data preprocessing and feature scaling using **MinMaxScaler**
 * Multi-output regression model for predicting irrigation parameters
@@ -37,7 +37,7 @@ Smart-Irrigation-System
 
 ---
 
-# 🧠 Machine Learning Techniques Used
+# Machine Learning Techniques Used
 
 **Min-Max Scaling**
 Normalizes input features to improve model performance.
@@ -50,7 +50,7 @@ Uses `joblib` to save and load trained models and scalers.
 
 ---
 
-# 📂 Dataset Description
+# Dataset Description
 
 The dataset (`irrigation_machine.csv`) includes the following features:
 
@@ -68,22 +68,22 @@ The dataset (`irrigation_machine.csv`) includes the following features:
 
 ---
 
-# 🚀 How to Run the Project
+# How to Run the Project
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```
 git clone https://github.com/your-username/smart-irrigation-system.git
 cd smart-irrigation-system
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```
 pip install pandas numpy scikit-learn joblib matplotlib
 ```
 
-### 3️⃣ Run the Jupyter Notebook
+### Run the Jupyter Notebook
 
 Open the notebook:
 
@@ -95,7 +95,7 @@ using **Jupyter Notebook** or **JupyterLab**.
 
 ---
 
-# 📊 Model Evaluation
+# Model Evaluation
 
 The model performance is evaluated using:
 
@@ -107,7 +107,7 @@ These metrics help measure the accuracy of irrigation predictions.
 
 ---
 
-# 💡 Future Improvements
+# Future Improvements
 
 * Integration with **IoT sensors** for real-time data collection
 * Deployment as a **web or mobile application**
@@ -116,7 +116,7 @@ These metrics help measure the accuracy of irrigation predictions.
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 **Akanksha Kalamadugu**
 B.Tech – Artificial Intelligence & Machine Learning
